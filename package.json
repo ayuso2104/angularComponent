@@ -1,0 +1,33 @@
+{
+  "name": "components",
+  "version": "2.0.0",
+  "description": "Angular Compotents",
+  "main": "pages/index.jsp",
+  "devDependencies": {
+    "grunt-processhtml": "^0.4.1",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-angular-templates": "^1.1.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-htmlmin": "^2.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-ng-annotate": "^2.0.2",
+    "grunt-remove-logging": "^0.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "component": {
+    "name": "angular-component",
+    "version": "1.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

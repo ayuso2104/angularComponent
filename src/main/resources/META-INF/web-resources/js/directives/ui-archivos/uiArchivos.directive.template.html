@@ -1,0 +1,25 @@
+<div class="ui-archivos">
+  <div class="ui-archivos-header">
+    <input type="file" class="ui-archivos-file-reader" name="file" id="files" multiple="true"/>
+    <button ui-button="Selecciona" icono="ui-icon-plusthick" ng-disabled="configuration_ui_archivos.bloqueo || files.length>=modeloArchivos.maxArchivos()" ng-click="seleccionarArchivo()"></button>
+    <button ui-button="Cargar Archivos" icono="ui-icon-arrowreturnthick-1-n" ng-disabled="configuration_ui_archivos.bloqueo || files.length == 0" ng-click="enviar()"></button>
+    <button ui-button="Cancelar" icono="ui-icon-cancel" ng-disabled="configuration_ui_archivos.bloqueo || files.length == 0" ng-click="cancelar()"></button>
+  </div>
+  <div class="ui-archivos-content">
+    <div>
+      <div ng-repeat="error in errores track by $index" class="error">
+        <!--<span style="color:red" class="ui-button-icon-left ui-icon ui-c ui-icon-closethick" ng-if="icono"></span>-->
+        <!--<span style="color:red" class="ui-button-icon-left ui-icon-closethick"></span>-->
+        {{error}}
+      </div>
+    </div>
+
+    <div class="contenedorImagenes" ng-repeat="file in files  track by $index">
+      <span class="ui-icon ui-icon-closethick eliminar-btn" ng-click="eliminarArchivo(file)" ng-if="!configuration_ui_archivos.bloqueo"></span>
+      <img ng-if="file.type.substring(0,5) === 'image' && file.archivo.result " class="thumb" ng-src="{{file.archivo.result}}" >
+      <img ng-if="file.type === 'application/pdf' " class="thumb" src="recurso/images/iconos/pdf-mediano.png" >
+      <img ng-if="file.type === 'application/msword' " class="thumb" src="recurso/images/iconos/word.png" >
+      <span class="nombreAarchivo">{{file.name}} ({{ (file.size / 1024) / 1024  | number: 2}} MB)</span>
+    </div>
+  </div>
+</div>

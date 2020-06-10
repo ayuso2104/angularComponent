@@ -1,0 +1,29 @@
+<div class="seleccion-tiempo-container">
+  <select class="form-control"
+    placeholder="00"
+
+    ng-options="option.horas for option in horas track by option.valor"
+    ng-model="reloj.hora"
+    ng-change="cambio(reloj.hora,reloj.minuto,reloj.meridiano) && ngChange({'hora':reloj.hora,'minuto':reloj.minuto})"
+  >
+    <option value="" disabled style="color:gray">--</option>
+  </select>
+  <select class="form-control"
+    
+    ng-options="option.minutos for option in minutos track by option.valor"
+    ng-model="reloj.minuto"
+    ng-change="cambio(reloj.hora,reloj.minuto,reloj.meridiano)  && ngChange({'hora':reloj.hora,'minuto':reloj.minuto})"
+  >
+    <option value="" disabled style="color:gray">--</option>
+  </select>
+
+  <select class="form-control" ng-if="horas.length <= 12"
+
+    ng-options="option for option in meridianos"
+    ng-model="reloj.meridiano"
+    ng-change="cambio(reloj.hora,reloj.minuto,reloj.meridiano)"
+  >
+
+  </select>
+
+</div>

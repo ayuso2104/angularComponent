@@ -1,0 +1,462 @@
+.ui-fieldset-legend {
+  font-size: 11px;
+  background: #f7f7f7 !important;
+  width: auto !important;
+  margin-bottom: 0px;
+}
+
+.ui-fieldset-legend:hover {
+  background: white !important;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  padding: 2px;
+}
+
+.ui-section {
+  margin-top: 10px;
+}
+
+.ui-section:first-child {
+  margin-top: 0px;
+}
+
+.ui-seccion-center {
+  text-align: center;
+}
+
+.ui-seccion-center button{
+  margin-top: 5px;
+}
+
+
+.ui-legend {
+  margin-top: 10px;
+}
+
+.ui-legend:first-child {
+  margin-top: 0px;
+}
+
+button.editar, button.editar:hover {
+  background: #d6fff1 !important;
+}
+
+button.eliminar, button.eliminar:hover {
+  background: #ffccc3 !important;
+}
+
+.botonera-inferior {
+  text-align: right;
+  display: block;
+  margin-right: 0px;
+padding-right: 0px;
+margin-top: 10px;
+margin-bottom: 0;
+padding-bottom: 0;
+}
+
+.form-group {
+    /**
+    * Se quito porque afeetaba directamente a bootstrap
+    */
+  /*width: 100%;*/
+}
+.form-g label {
+  /*width: 30% !important;*/
+}
+.form-group label {
+
+  font-weight: normal;
+}
+
+.form-group .form-control {
+      width: 200px;
+      height: 24px;
+      font-size: 11px;
+      background: #f7f7f7;
+      border-color: #848484;
+      padding: 0px;
+      padding-left: 10px;
+}
+
+.has-error .form-control {
+    border-color: #a94442 !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+
+
+
+.form-group textarea.form-control {
+  height: 60px;
+  display: inline-block;
+  width: 68%;
+  resize: none;
+}
+
+.form-group .form-control:focus {
+  box-shadow: none;
+  background: white;
+  border-color: black;
+}
+
+.form-group textarea.form-control:focus {
+  box-shadow: none;
+  background: #f7f7f7;
+}
+
+.ui-seccion-center .ui-button {
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.panel-heading {
+  border-radius: 3px;
+}
+
+.ui-button {
+	white-space: nowrap;
+    overflow:hidden !important;
+    text-overflow: ellipsis;
+}
+
+.ui-button.no-text {
+  padding: 7.5px 0px;
+  width: 29px;
+}
+
+.ui-button .no-icon {
+  padding-left: 12px;
+}
+
+.ui-button:active,
+.ui-button:focus,
+.ui-button.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.ui-button:disabled {
+  opacity: 0.35;
+}
+
+
+
+/* uiModal */
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+
+.ui-modal-wrapper {
+  z-index: 10;
+  background-color: rgba(100, 100, 100, 0.25);
+  position: fixed;
+  overflow : auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.ui-modal-container {
+  background: white;
+  width: 550px;
+  margin: auto;
+  top: 20%;
+  /* max-height: 100%;*/
+  position: relative;
+  display: block;
+  border: solid 1px #878787;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px black;
+  min-height: 100px;
+    min-width: 300px;
+}
+.ui-modal-container {
+  background: white;
+  width: 550px;
+  margin: auto;
+  top: 20%;
+  /* max-height: 100%;*/
+  position: relative;
+  display: block;
+  border: solid 1px #878787;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px black;
+  min-height: 100px;
+    min-width: 300px;
+}
+.ui-modal-container-op {
+  background: white;
+  max-width: 350px;
+  /* max-height: 100%;*/
+  margin: auto;
+  top: 20%;
+  max-height: 100%;
+  position: relative;
+  display: block;
+  border: solid 1px #878787;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px black;
+  
+  resize: both;
+	overflow: auto !important;
+	overflow-y: hidden !important;
+	min-height: 100px;
+    min-width: 300px;
+}
+
+.ui-modal-container-sm {
+  background: white;
+  width: 250px;
+  margin: auto;
+  top: 20%;
+  /* max-height: 100%;*/
+  position: relative;
+  display: block;
+  border: solid 1px #878787;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px black;
+  
+  resize: both;
+	overflow: auto !important;
+	overflow-y: hidden !important;
+	min-height: 100px;
+    min-width: 300px;
+}
+
+.ui-modal-container-md {
+  background: white; 
+  width: 768px;
+  margin: auto;
+  top: 20%;
+  /* max-height: 100%;*/
+  position: relative;
+  display: block;
+  border: solid 1px #878787;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px black;
+  
+  resize: both;
+	overflow: auto !important;
+	overflow-y: hidden !important;
+	min-height: 100px;
+    min-width: 300px;
+}
+
+.ui-modal-container-lg {
+  background: white;
+  width: 1024px;
+  margin: auto;
+  top: 20%;
+  /* max-height: 100%;*/
+  position: relative;
+  display: block;
+  border: solid 1px #878787;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px black;
+  
+  resize: both;
+	overflow: auto !important;
+	overflow-y: hidden !important;
+	min-height: 100px;
+    min-width: 300px;
+}
+
+.ui-modal-container-xl {
+  background: white;
+ /* max-height: 100%;*/
+  width: 1200px;  
+  margin: auto;
+  top: 10%;
+  position: relative;
+  display: block;
+  border: solid 1px #878787;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px black;
+  
+  resize: both;
+	overflow: auto !important;
+	overflow-y: hidden !important;
+	min-height: 100px;
+    min-width: 300px;
+}
+.ui-modal-content {
+  padding: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /*max-height: 100%;*/
+  cursor: default;
+}
+
+.ui-panel-content {
+	cursor: auto;
+}
+
+.ui-modal-header {
+  height: 24px;
+    background: #A7A7A7;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    cursor: move;
+}
+
+.ui-modal-header  span{
+  position: absolute;
+top: 50%;
+transform: translateY(-50%);
+padding-left: 12px;
+}
+
+.ui-modal-hide {
+  animation: fadeout 0.25s;
+  display: none;
+}
+
+.fadein {
+  animation: fadein 0.25s;
+}
+
+.ui-modal-header .cerrar {
+  position: relative;
+  background: transparent;
+  border: none;
+  width: 20px;
+    height: 20px;
+    top: 50%;
+    margin-right: 8px;
+    transform: translateY(-50%);
+    padding: 3px;
+}
+
+.ui-modal-header .cerrar .ui-icon{
+  z-index: 150;
+  position: absolute;
+    left: 1px;
+}
+
+.ui-modal-header .cerrar:hover {
+  background: white;
+  border-radius: 3px;
+  border: solid 1px #878787;
+  cursor: pointer;
+}
+
+@media (min-width: 768px){
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-op-1,
+  .seven-cols .col-lg-1  {
+    width: 100%;
+    *width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-op-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-op-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+  }
+}
+
+.ui-modal-wrapper .bottom-content {
+    text-align: right;
+    border-top: solid 1px #a4a4a4;
+    padding-top: 8px;
+    margin-top: 16px;
+}
+
+.ui-modal-wrapper .bottom-content button {
+  width: 40px;
+margin-left: 5px;
+}
+
+.limited {
+
+  left: 30%;
+    position: relative;
+    margin: 8px;
+}
+
+
+.panel-name {
+	display: inline-block;
+    position: relative;
+    top: -4px;
+}
+
+.ui-panel-header .ui-icon {
+	display: inline-block;
+}
+
+.ui-panel-header {
+	    cursor: pointer;
+    background: #f7f7f7;
+    border: solid 1px #848484;
+    padding: 3px;
+    padding-bottom: 0px;
+    border-radius: 3px;
+    margin-bottom: 3px;
+}
+
+.ui-panel-header.ui_panel_active {
+	background: #FFFFFF;
+	padding: 5px;
+	padding-bottom: 8px;
+}
+
+.ui-modal-container.ui-modal-main {
+	resize: both;
+	overflow: auto !important;
+	overflow-y: hidden !important;
+	min-height: 200px;
+    min-width: 300px;
+}
+
+ .margin-bottom-tab {
+ 	margin-bottom: 3px;
+ }
+ 
+ .fila-green {
+ 	color: green;
+ }
+ 
+ .fila-yellow {
+ color: yellow;
+ }
+ 
+ .fila-red {
+ color: red;
+ 
+ }
+ .fila-orange {
+ 	color: orange;
+ }

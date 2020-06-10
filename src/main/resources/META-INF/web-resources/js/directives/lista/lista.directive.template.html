@@ -1,0 +1,1 @@
+<ul class="lista-prime"><div ng-repeat = "elemento in datos track by $index"><li ng-class = "{\'lista-seleccionado\':($index ==seleccionado()),\'lista-mouse\':es_seleccionado_mouse($index)}" ng-click="seleccionado($index)" ng-mouseenter="seleccionado_mouse($index)"ng-mouseleave="seleccionado_mouse(-1)">{{elemento}}</li></div></ul>

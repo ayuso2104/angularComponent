@@ -1,0 +1,44 @@
+<div class="ui-list">
+    <div ng-click="invert($event)" id="{{$id}}" class="search" title="{{vm.titulo}}">
+        <div class="titulo">
+            <span class="contenido">{{ vm.titulo }}</span>
+            <span class="tri-icon ui-icon ui-icon-triangle-1-s pull-right"></span>
+        </div>
+    </div>
+    <div ng-click="$event.stopPropagation()"
+         class="ui-list-list" ng-class="{'activo': activo, 'inactivo': !activo}">
+        <div class="ui-list-header">
+
+            <input type="checkbox" ng-model="todas" ng-change="setTodasA(todas)"
+                   title="Seleccionar/Deseleccionar todos"/>
+
+            <input type="text" ng-model="busqueda[atributo]" class="busqueda"/>
+
+            <div class="cancel-button">
+                <div class="ui-selectcheckboxmenu-close ui-corner-all">
+                    <span class="ui-icon close-button ui-icon-circle-close" ng-click="activo=false"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="repeat-wrapper form-horizontal" style="margin-left: 15px">
+
+            <div class="form-group" ng-repeat="item in ngModel | filter:busqueda">
+                <div class="checkbox">
+                    <label for="ui-list-id-{{ $index }}-{{ $id }}"
+                           class="black"
+                           style="width:auto">
+                        <input
+                                id="ui-list-id-{{ $index}}-{{ $id }}"
+                                ng-model="item[LLAVE_ACTIVACION]"
+                                ng-disabled="item.$$disabled"
+                                ng-readonly="item.$$disabled"
+                                ng-change="onCambioOpcion(item)"
+                                type="checkbox">{{ item[atributo]}}</label>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

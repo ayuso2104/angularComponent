@@ -1,0 +1,201 @@
+.ui-list {
+    /*padding-top: 3px !important;*/
+    height: inherit;
+}
+
+.ui-list{
+    height: inherit;
+}
+
+.ui-list > select {
+    width: 100% !important;
+}
+
+.ui-list label.black {
+    color: black;
+}
+
+.ui-list .tri-icon {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 2px;
+}
+
+.ui-list-wrapper {
+    padding-bottom: 5px
+}
+
+.ui-list-list {
+    z-index: 100;
+    position: absolute;
+    background: white;
+    margin-left: -11px;
+    border: solid 1px #878787;
+    width: 100%;
+    max-height: 350px;
+}
+
+td .ui-list-list {
+    width: auto;
+}
+
+td .ui-list-list .busqueda {
+    margin-top: 9px;
+}
+
+td .ui-list-list .cancel-button .ui-icon {
+    margin-top: 33px;
+}
+
+td .ui-list-list input[type="checkbox"] {
+    display: inline-block;
+}
+
+.ui-list-item {
+    width: 100%;
+    position: relative;
+}
+
+.ui-list-item label {
+    width: 100% !important;
+}
+
+.ui-list-item span {
+    height: 18px;
+    top: 20%;
+    padding-left: 5px;
+}
+
+.ui-list-item input[type='checkbox'], .ui-list-header input[type='checkbox'] {
+    height: 18px;
+    width: 18px;
+}
+
+@media (min-width: 768px) {
+    .repeat-wrapper.form-horizontal > .form-group > .checkbox > label > input[type='checkbox'] {
+        position: absolute;
+        margin-top: 4px \9;
+        margin-left: -20px
+    }
+
+    .repeat-wrapper.form-horizontal > .form-group > .checkbox label, .radio label {
+        min-height: 20px;
+        padding-left: 20px;
+        margin-bottom: 0;
+        font-weight: 400;
+        cursor: pointer;
+    }
+}
+
+.repeat-wrapper {
+    max-height: 220px !important;
+    overflow-y: auto;
+    padding-left: 26px !important;
+    margin-left: 0px !important;
+}
+
+.repeat-wrapper.form-horizontal > .form-group {
+    margin-bottom: 0px !important;
+    margin-right: 0px !important;
+}
+
+.ui-list > div > .titulo{
+    position: relative;
+}
+
+.ui-list .search{
+    height: inherit;
+}
+
+.ui-list > div > .titulo >.contenido {
+    display: block;
+    white-space: nowrap;
+    margin-top: 8px;
+    max-width: 85%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    top: -5px;
+    position: absolute;
+}
+
+.repeat-wrapper.form-horizontal > .form-group > .checkbox > label > input[type='checkbox'] {
+    margin-top: 0px;
+}
+
+.ui-list.form-control {
+    cursor: pointer;
+    width: 100%;
+    padding-left: 0px;
+}
+
+.ui-list-header {
+    padding-left: 6px;
+    height: 27px;
+}
+
+.ui-list .repeat-wrapper {
+    padding-left: 8px;
+}
+
+.ui-list-header {
+    background-color: #A4a4A4;
+    margin: 3px;
+    border-radius: 3px;
+}
+
+.ui-list-header input[type='text'] {
+    position: relative;
+    transform: translateY(-6px);
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    -o-transform: translateY(-6px);
+    height: 18px;
+    border-radius: 5px;
+    width: 74%;
+    padding-left: 3px;
+    background-color: #f7f7f7;
+}
+
+.ui-list-header input[type='text']:hover, .ui-list-header input[type='text']:focus {
+    outline: none;
+    border: solid 1px black;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.ui-list-header .cancel-button span {
+    margin-right: 8px;
+    margin-left: auto;
+    margin-top: -15px;
+    position: absolute;
+    right: 0px;
+    transform: translateY(-135%);
+    -webkit-transform: translateY(-135%);
+    -moz-transform: translateY(-135%);
+    -ms-transform: translateY(-135%);
+    -o-transform: translateY(-135%);
+    cursor: pointer;
+}
+
+.ui-list-list.inactivo {
+    display: none;
+}
+
+.ui-list-list.activo {
+    overflow: hidden;
+    max-height: 350px;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, .5, 1);
+}
+
+.ui-list.inactivo {
+    cursor: default;
+}
+
+.ui-list-wrapper.ng-touched.ng-invalid > .ui-list.form-control {
+    /*border-color: #a94442 !important;*/
+}
