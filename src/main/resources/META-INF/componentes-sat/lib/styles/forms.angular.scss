@@ -1,0 +1,44 @@
+/**
+ * Boolean Indica si un elemento es válido actualmente según las reglas que hayas colocado.
+ */
+.ng-valid {
+
+}
+
+/**
+ * Boolean  Indica si un elemento actualmente no es válido según las reglas que colocó.
+ */
+.ng-invalid {
+
+}
+
+/**
+ * Boolean Verdadero si la entrada aún no se ha utilizado.
+ */
+.ng-pristine {
+
+}
+
+/**
+ * Boolean Verdadero si se ha utilizado la entrada.
+ */
+.ng-dirty {
+
+}
+
+/**
+ * Boolean Verdadero si la entrada ha sido borrosa. (si le pusiste un valor y luego lo quitaste)
+ */
+.ng-touched {
+
+}
+
+form.ng-invalid, ng-form.ng-invalid.validable, [ng-form].ng-invalid.validable {
+
+  &.ng-submitted {
+    input.ng-invalid, select.ng-invalid, select-search.ng-invalid, textarea.ng-invalid {
+      border-color: $color-error;
+    }
+  }
+
+}

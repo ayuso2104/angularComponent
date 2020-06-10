@@ -1,0 +1,227 @@
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.my-1_4 {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.my-1_2 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.mb {
+  margin-bottom: 1em;
+}
+
+.mb-1_2 {
+  margin-bottom: 0.5em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.mb-3 {
+  margin-bottom: 3em;
+}
+
+.mt {
+  margin-top: 1rem;
+}
+
+.mt-1_2 {
+  margin-top: 0.5rem;
+}
+
+.ml {
+  margin-left: 1em;
+}
+
+.p-auto {
+  padding: 1em;
+}
+
+.mr {
+  margin-right: 1em;
+}
+
+.mr-1_2 {
+  margin-right: 0.5rem;
+}
+
+.spin {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.bl {
+  border-left-color: #ddd;
+  border-left-style: solid;
+  border-left-width: 0.5px;
+}
+
+.no-px {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.white {
+  color: #fff;
+}
+
+.b-gray {
+  border: solid 0.5px #ddd;
+}
+
+.break-word {
+  word-break: break-word;
+}
+
+.h-100 {
+  height: 100px;
+}
+
+.h-200 {
+  height: 200px;
+}
+
+.h-300 {
+  height: 300px;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.not-allowed {
+  cursor: not-allowed;
+}
+/* xs */
+@media only screen and (max-width: 479px) {
+
+}
+
+/* sm */
+@media only screen and (max-width: 767px) {
+  .sm-inline {
+    display: inline-block;
+  }
+
+  .sm-spin-r {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .sm-mx {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+/* md */
+@media only screen and (max-width: 991px) {
+
+}
+
+/* lg */
+@media only screen and (max-width: 1199px) {
+
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.r-0 {
+  right: 0;
+}
+
+@for $i from 1 through 10 {
+  .circle-#{$i} {
+    width: $i+em;
+    height: $i+em;
+    border-radius: 50%;
+  }
+}
+
+.resize-v {
+  resize: vertical;
+}
+
+.gray {
+  color: darkgray;
+}
+
+.icon-rotate-180 {
+  transform: rotateZ(180deg);
+}
+
+.form-control-feedback-no-label {
+  top: 25%;
+}
+
+
+.strong {
+  font-weight: bold;
+}

@@ -1,0 +1,356 @@
+$width-base: 15rem;
+$table-color-odd: #f0f0f0;
+$table-color-even: #fdfdfd;
+$table-color-odd-fixed: #ededed;
+$table-color-even-fixed: #fafafa;
+$table-color-border: #ddd;
+
+.ac-table-container {
+  width: 100%;
+}
+
+.ac-table-container .ac-scroll-table {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.ac-table {
+  width: 100%;
+  border-collapse: separate;
+}
+
+.ac-table.table {
+  margin-bottom: 0px;
+}
+
+.ac-controls-container {
+  text-align: center;
+}
+
+.ac-paginator__container {
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+.paginator__buttons {
+  margin-right: 0.5em;
+}
+
+.ac-paginator__container .paginator__buttons {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.ac-paginator__number-pages {
+  height: 2.3em;
+  position: relative;
+  width: 3.5em;
+  display: inline-block;
+  padding: 0;
+  font-size: 11px;
+  
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+
+  /**
+  * Ajustar un poco visualmente
+  */
+  top: 1px;
+}
+
+.ac-cell .ac-cell__label-text {
+  word-wrap: break-word;
+}
+
+.ac-header__content {
+  height: 100%;
+  position: relative;
+}
+
+/**
+* En firefox 26 la columna no respeta el overflow:scroll del padre por lo que hay que poner el hidden manualmente
+*/
+.ac-header__column-name,
+.ac-cell__label-text {
+  overflow: hidden;
+}
+
+/**
+* Es internet explorer ?
+*/
+_:-ms-fullscreen,
+:root .ac-header__content {
+  padding-bottom: 1rem;
+}
+
+.ac-header__column-filter {
+  bottom: 0;
+}
+
+.ac-header__column-order {
+  padding-right: .5em;
+  font-size: 11px;
+}
+
+.ac-header__column-filter--has-filter {
+  position: relative;
+}
+
+.ac-header__column-filter-button {
+  color: #878787;
+  cursor: pointer;
+  position: absolute;
+  top: 25%;
+  right: 0;
+}
+
+.ac-header__column--orderable {
+  cursor: pointer;
+}
+
+.ac-table-config__button-clean {
+  margin-right: 0.5em;
+}
+
+.ac-table-config-tooltip-container {
+  text-align: left;
+}
+
+/* Fixed */
+
+.ac-header__row--has-fixed .ac-header__column--fixed,
+.ac-row--has-fixed .ac-cell--fixed {
+  position: absolute;
+  min-width: $width-base;
+  width: $width-base;
+}
+
+.ac-cell--fixed,
+.ac-header__column--fixed {
+  z-index: 1000;
+}
+
+.ac-header__row--has-fixed .ac-header__column--no-fixed,
+.ac-row--has-fixed .ac-cell--no-fixed {
+  width: 100%;
+}
+
+.ac-header__column-filter--has-filter {
+  width: 100%;
+}
+
+td.ac-table__no-elements {
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.ac-row--selectionable {
+  cursor: pointer;
+}
+
+.ac-cell--check,
+.ac-header__column--check {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.ac-cell--container-content {
+  height: 100%;
+}
+
+
+
+
+/**
+* Theme
+*/
+.ac-table {
+  border: solid 1px steelblue;
+}
+
+.ac-table,
+.ac-table th,
+.ac-table td {
+  border: solid 1px $table-color-border;
+}
+
+/**
+* En internet explorer se muestra el borde a medias, con esto se corrige agrandando el borde
+*/
+_:-ms-fullscreen,
+:root td.ac-table__no-elements {
+  border-top-width: 3px;
+}
+
+.ac-paginator__number-pages {
+  background-color: #fafafa;
+}
+
+.ac-header__column--fixed {
+  z-index: 1001;
+}
+
+.ac-table .ac-row--selectionable:hover {
+  background-color: #f5f5f5;
+}
+
+.ac-table .ac-row--selected {
+  background-color: #f5f5f5;
+}
+
+/* Fixed */
+
+.ac-header__column--fixed,
+.ac-cell--fixed {
+  background-color: #fbfbfb;
+}
+
+.ac-table .ac-row--selectionable:hover .ac-header__column--fixed,
+.ac-table .ac-row--selectionable:hover .ac-cell--fixed {
+  background-color: #f5f5f5;
+}
+
+.ac-table .ac-row--selected .ac-header__column--fixed,
+.ac-table .ac-row--selected .ac-cell--fixed {
+  background-color: #f5f5f5;
+}
+
+/** Se reescriben colores de bg** mas oscuras
+*/
+
+.bg-danger .ac-header__column--fixed,
+.bg-danger .ac-cell--fixed {
+  background-color: #ebcccc;
+}
+
+.ac-table .ac-row--selectionable.bg-danger:hover .ac-header__column--fixed,
+.ac-table .ac-row--selectionable.bg-danger:hover .ac-cell--fixed {
+  background-color: #e7c1c1;
+}
+
+.ac-table .ac-row--selectionable.bg-danger:hover .ac-header__column--fixed,
+.ac-table .ac-row--selectionable.bg-danger:hover .ac-cell {
+  background-color: #e7c1c1;
+}
+
+.ac-table .ac-row--selected.bg-danger .ac-header__column--fixed,
+.ac-table .ac-row--selected.bg-danger .ac-cell--fixed {
+  background-color: #e7c1c1;
+}
+
+.ac-table .ac-row--selected.bg-danger .ac-header__column--fixed,
+.ac-table .ac-row--selected.bg-danger .ac-cell {
+  background-color: #e7c1c1;
+}
+
+
+.bg-success .ac-header__column--fixed,
+.bg-success .ac-cell--fixed {
+  background-color: #efffeb;
+}
+
+.ac-table .ac-row--selectionable.bg-success:hover .ac-header__column--fixed,
+.ac-table .ac-row--selectionable.bg-success:hover .ac-cell--fixed {
+  background-color: #e3ffdc;
+}
+
+.ac-table .ac-row--selectionable.bg-success:hover .ac-header__column--fixed,
+.ac-table .ac-row--selectionable.bg-success:hover .ac-cell {
+  background-color: #e3ffdc;
+}
+
+.ac-table .ac-row--selected.bg-success .ac-header__column--fixed,
+.ac-table .ac-row--selected.bg-success .ac-cell--fixed {
+  background-color: #e3ffdc;
+}
+
+.ac-table .ac-row--selected.bg-success .ac-header__column--fixed,
+.ac-table .ac-row--selected.bg-success .ac-cell {
+  background-color: #e3ffdc;
+}
+
+
+
+.ac-header__column-order {
+  color: #777;
+}
+
+/** Para tabla v2
+.vertical-center {
+  position: relative;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+*/
+
+.vertical-center .ac-cell__label-text {
+  position: relative;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+.ac-row {
+  background-color: $table-color-even;
+
+  &:nth-child(odd) {
+    background-color: $table-color-odd;
+  }
+}
+
+.ac-cell.ac-cell--fixed {
+  background-color: $table-color-even-fixed;
+
+
+  &:nth-child(odd) {
+    background-color: $table-color-odd-fixed;
+  }
+
+}
+
+.paginator__buttons,
+.paginator-buttons-left,
+.paginator-buttons-number-container,
+.paginator-buttons-right {
+  float: left;
+}
+
+.paginator-buttons-number {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+/**
+ * Se ajusta los padding para la tabla con menu
+ */
+
+.ac-table .ac-cell {
+  padding: 0;
+}
+
+.ac-cell--container-content{
+  padding: 0.5rem;
+}
+
+/**
+* Numero de columnas de tabla permitidas
+*/
+$numbers: 60;
+
+@for $i from 1 through $numbers {
+
+  .ac-header__row--has-fixed.translate-row-#{$i}::before,
+  .ac-row--has-fixed.translate-row-#{$i}::before {
+    content: "";
+    width: $width-base * $i;
+    min-width: $width-base * $i;
+    display: block;
+  }
+
+  .ac-header__column--fixed.translate-col-#{$i},
+  .ac-cell--fixed.translate-col-#{$i} {
+    transform: translateX($width-base * $i);
+  }
+
+}

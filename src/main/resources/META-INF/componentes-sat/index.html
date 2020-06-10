@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es-MX" ng-app="app">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Componentes del SAT</title>
+
+    <!--<link rel="stylesheet" href="lib/fonts/fonts.css" />
+
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.css" />
+
+    <link rel="stylesheet" href="lib/fa/css/all.min.css">
+    <link rel="stylesheet" href="lib/styles/init.css">
+    <link rel="stylesheet" href="lib/styles/helpers.css">
+
+    <link rel="stylesheet" href="lib/components/common.css">
+    <link rel="stylesheet" href="lib/components/menu/menu.css">
+    <link rel="stylesheet" href="lib/components/table/table.css">
+    <link rel="stylesheet" href="lib/components/calendar/calendar.css">
+    <link rel="stylesheet" href="lib/components/modal/modal.css">
+    <link rel="stylesheet" href="lib/components/accordion/accordion.css">
+    <link rel="stylesheet" href="lib/components/selectorMultiple/selectorMultiple.css">-->
+
+    <link rel="stylesheet" href="lib/dist/componentes-sat.bundle.css">
+</head>
+
+<body>
+    <div id="a_element"></div>
+    <ui-view></ui-view>
+
+    <style>
+        .el-row {
+            clear: both;
+        }
+        .el-cell {
+            width: 3rem;
+            height: 3rem;
+            float: left;
+            border: solid 1px white;
+        }
+        .el-cell--on {
+            background-color: steelblue;
+        }
+
+        .el-cell--off {
+            background-color: whitesmoke;
+        }
+
+    </style>
+    <div id="el-board-container"></div>
+
+    <!--<script src="lib/core/core.js"></script>
+
+    <script src="lib/components/dom.builder-betaV2.js"></script>
+    <script src="lib/components/common.js"></script>
+    <script src="lib/components/selector/selector.js"></script>
+    <script src="lib/components/menu/menu.js"></script>
+    <script src="lib/components/table/table.ts"></script>
+    <script src="lib/components/calendar/calendar.js"></script>
+    <script src="lib/components/modal/modal.js"></script>
+    <script src="lib/components/accordion/accordion.js"></script>
+    <script src="lib/components/selectorMultiple/selectorMultiple.js"></script>
+
+    <script src="lib/components/selectorMultiple/selectorMultiple.js"></script>-->
+
+    <script src="lib/dist/componentes-sat.bundle.js"></script>
+    <script src="src/fake.js"></script>
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-ui-router.js"></script>
+    <script src="lib/angular/angular-animate.js"></script>
+    <script src="lib/angular/angular-locale_es-mx.js"></script>
+
+    <script src="lib/angular-bridge/common.module.js"></script>
+    <script src="lib/angular-bridge/selector.directive.js"></script>
+    <script src="lib/angular-bridge/table.directive.js"></script>
+    <script src="lib/angular-bridge/date.directive.js"></script>
+    <script src="lib/angular-bridge/modal.directive.js"></script>
+    <script src="lib/angular-bridge/accordion.directive.js"></script>
+    <script src="lib/angular-bridge/selector-multiple.directive.js"></script>
+
+    <script src="src/modules/main/app.js"></script>
+    <script src="src/modules/main/router.js"></script>
+
+    <script src="src/controllers/TablaCtrl.js"></script>
+    <script src="src/controllers/MenuCtrl.js"></script>
+    <script src="src/controllers/CalendarioCtrl.js"></script>
+    <script src="src/controllers/ModalCtrl.js"></script>
+    <script src="src/controllers/AcordeonCtrl.js"></script>
+    <script src="src/controllers/SelectorMultipleCtrl.js"></script>
+</body>
+
+</html>

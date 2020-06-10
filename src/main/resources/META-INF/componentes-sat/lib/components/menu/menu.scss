@@ -1,0 +1,65 @@
+/**
+* Layout
+*/
+
+.contextual-menu-container {
+    position: absolute;
+    z-index: 2100;
+}
+
+.contextual-menu-item--hide {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+* Theme
+*/
+
+.contextual-menu-container {
+    padding: 0;
+    background-color: #ddd;
+
+    top: 50%;
+    left: 1rem;
+}
+
+.contextual-menu-container ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.contextual-menu-item:hover {
+    background-color: #f4f4f4;
+}
+
+.contextual-menu-item {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.contextual-menu-item.disabled {
+    cursor: context-menu;
+    color: #777;
+}
+
+.contextual-menu-item.disabled:hover {
+    background-color: #ddd;
+}
+
+.contextual-menu-item-label {
+    padding-left: 0.5rem;
+}

@@ -1,0 +1,19 @@
+<div class="row">
+    <h2>Tabla de datos</h2>
+</div>
+
+<div id="table-container">
+    <hr>
+    <h3>Construcción con componentes</h3>
+</div>
+
+<div class="row">
+    <hr>
+    <h3>Construcción usando angular</h3>
+
+    <ac-table ng-model="vm.users" ac-columns="vm.columns" ac-config="vm.config" ac-data-resolver="vm.dataResolver"></ac-table>
+    <button ng-click="vm.imprimirElemento()">set values</button>
+    <pre>
+        {{ vm.selected | json }}
+    </pre>
+</div>

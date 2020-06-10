@@ -1,0 +1,103 @@
+/**
+* Layout
+*/
+.calendar-container {
+  width: 100%;
+}
+
+.days-view, .months-view, .years-view {
+  width: 100%;
+  font-size: 0;
+}
+
+.days-view__day-container, .months-view__month-container, .years-view__year-container {
+  width: 14.28%;
+  display: inline-block;
+  height: 3rem;
+  position: relative;
+}
+
+.months-view__month-container, .years-view__year-container {
+  width: 33.33%;
+  height: 4rem;
+}
+
+.days-view__day, .months-view__month, .years-view__year {
+  position: relative;
+}
+
+.calendar-control {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar-control__button-selector {
+  flex-grow: 1;
+}
+
+/**
+* Theme
+*/
+$border-default: solid 1px #878787;
+$border-disabled: solid 1px #c3c3c3;
+$border-darken: solid 1px #333;
+$border-out: solid 1px #ddd;
+
+$color-active-default: aliceblue;
+$color-disabled-default: lighten(aliceblue, 2);
+$color-before-after-default: darkgray;
+$color-before-after-disabled: lighten(darkgray, 15);
+$color-selected: #ddd;
+
+$text-color-disabled: #aaa;
+$text-color: black;
+
+.days-view, .months-view, .years-view {
+  border: $border-out;
+}
+
+.days-view__day-container, .months-view__month-container, .years-view__year-container {
+  background-color: $color-active-default;
+  color: $text-color;
+  border: $border-default;
+  cursor: pointer;
+}
+
+.days-view__day-container:hover {
+  border: $border-darken;
+}
+
+.days-view__day-container--disabled {
+  background-color: $color-disabled-default;
+  cursor: default;
+  color: $text-color-disabled;
+  border: $border-disabled;
+
+
+  &:hover {
+    border: $border-disabled;
+  }
+}
+
+.days-view__day, .months-view__month, .years-view__year {
+  font-size: 1.3rem;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.days-view__day--before, .days-view__day--after {
+  background-color: $color-before-after-default;
+
+  &.days-view__day-container--disabled {
+    background-color: $color-before-after-disabled;
+  }
+}
+
+.days-view__day-container--selected {
+  background-color: $color-selected;
+}
+
+.ac-calendar--float {
+  width: 24rem;
+}

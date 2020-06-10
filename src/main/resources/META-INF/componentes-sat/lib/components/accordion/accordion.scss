@@ -1,0 +1,60 @@
+/**
+* Layout
+*/
+
+.ac-accordion-container, .ac-accordion__content-container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+.ac-accordion__header, .ac-accordion__body {
+    padding: 0.5rem 1rem;
+}
+
+.ac-accordion__header {
+    position: relative;
+}
+
+.ac-accordion__right-icon {
+    position: absolute;
+    right: 0.6rem;
+    top: 50%;
+
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.accordion-wrapper .ac-accordion-container {
+    margin-bottom: 0.4rem;
+}
+
+
+/**
+* Theme
+*/
+
+.ac-accordion__header {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.ac-accordion__header--locked {
+    cursor: initial;
+}
+
+.ac-accordion-container {
+    border: solid 1px #aaa;
+}
+
+.ac-accordion__right-icon {
+    cursor: pointer;
+}
+
+.with-errors .ac-accordion-container {
+    border-color: #a94442;
+}

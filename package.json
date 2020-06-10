@@ -1,0 +1,59 @@
+{
+  "name": "componentes-sat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "autoprefixer": "^9.4.7",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-angularjs-annotate": "^0.10.0",
+    "concurrently": "^4.1.0",
+    "css-loader": "^2.1.0",
+    "html-loader": "^0.5.5",
+    "html-loader-jest": "^0.2.1",
+    "http-server": "^0.11.1",
+    "jest": "^24.9.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "redux-devtools-extension": "^2.13.8",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  },
+  "scripts": {
+    "dev": "concurrently \"webpack --mode development -w\" \"http-server -p 8079\"",
+    "prod": "webpack --mode production",
+    "build": "webpack --mode development",
+    "stats": "webpack --mode production --profile --json > compilation-stats.json",
+    "test": "jest"
+  },
+  "dependencies": {
+    "angular": "^1.7.8",
+    "lodash": "^4.17.11"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "html"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.html$": "html-loader-jest"
+    },
+    "moduleNameMapper": {
+      "^@src/(.*)$": "<rootDir>/src/main/resources/META-INF/componentes-sat/lib/$1",
+      "^@test/(.*)$": "<rootDir>/src/main/resources/META-INF/componentes-sat/test/$1",
+      "^angular$": "<rootDir>/src/main/resources/META-INF/componentes-sat/lib/angular/angular.js"
+    },
+    "modulePathIgnorePatterns": [
+      "target",
+      "node_modules"
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+.w-table-container {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.w-table {
+}
+
+.w-table-column {
+  width: 12em;
+  float: left;
+}
+
+.w-table-data {
+  border: solid 1px #ddd;
+  word-break: break-word;
+  padding: 0.5em;
+
+  &:nth-child(odd) {
+    background-color: #fcfcfc;
+  }
+}
+
+.w-table-data.w-table-header {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.w-table-data--orderable {
+  cursor: pointer;
+}
+
+.w-in-header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0.5rem;
+}
+
+.w-table-header {
+  position: relative;
+}
+
+.w-buttons {
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 75%;
+  overflow-x: auto;
+  position: relative;
+}
+
+.w-buttons, .w-buttons-right, .w-buttons-left {
+  vertical-align: top;
+}
+
+.w-paginator {
+  width: 90%;
+}
+
+/** HACKS **/
+
+.material-icons.form-control-feedback {
+  right: 0;
+}
+
+.no-label {
+  top: 0.6em;
+}
+
+.no-padding {
+  right: 0.5em;
+}

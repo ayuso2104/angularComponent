@@ -1,0 +1,23 @@
+<div class="row">
+    <h2>Selector multiple</h2>
+</div>
+
+<div class="row">
+    <h3>Con componentes</h3>
+    <hr>
+
+    <button ng-click="vm.show=!vm.show">mostrar</button>
+    <div id="selector-multiple" ng-show="vm.show"></div>
+    aqui hay mucho contenido;
+</div>
+
+<div class="row">
+    <h3>con angular</h3>
+    <hr>
+
+    <input type="text" ng-model="vm.seleccionados" ac-selector-multiple ac-options="vm.options" ac-attribute="ref">
+
+    <pre>
+        <code>{{ vm.seleccionados | json }}</code>
+    </pre>
+</div>

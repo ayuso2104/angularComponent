@@ -1,0 +1,35 @@
+<div class="row">
+    <h3>Acordeón</h3>
+    <hr>
+
+    <div id="accordion-1"></div>
+
+    <hr>
+    <h3>
+        Con angular
+    </h3>
+    <hr>
+
+    <div class="accordion-wrapper">
+        <div ac-accordion="opcion-1" title="'El titulo'" parent="parent-1" ng-controller="SubAccordionCtrl as vmc">
+            {{ vm.valor }} <button ng-click="vmc.accion()">{{ vmc.otroMensaje }} </button>
+            <pre>{{ vmc | json}}</pre>
+        </div>
+        <div ac-accordion="opcion-2" parent="parent-1">
+            <ng-include src="'src/templates/componentes/modal.html'" ng-controller="SubAccordionCtrl as vmc"></ng-include>
+        </div>
+        <div ac-accordion="opcion-3" parent="parent-1">
+            Opción 3
+        </div>
+    </div>
+    +
+    <div class="accordion-wrapper">
+        <div ac-accordion="opcion-1" parent="parent-2">
+            Opción 1
+        </div>
+        <div ac-accordion="opcion-2" parent="parent-2">
+            Opción 2
+        </div>
+    </div>
+
+</div>

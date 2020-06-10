@@ -1,0 +1,55 @@
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h3>Modales con javascript</h3>
+        <hr>
+
+        <div id="modal">
+            <button ng-click="vm.abrir()">Abrir modal</button>
+            <button ng-click="vm.abrirConfirm()">Abrir confirm</button>
+        </div>
+        <div id="mensaje">
+            <div>
+                <input type="text" ng-model="vm.mensaje">
+                <input type="text" ng-model="vm.title">
+            </div>
+            <div>
+                <input type="radio" name="type" value="bg-default" ng-model="vm.type"> default
+                <input type="radio" name="type" value="bg-primary" ng-model="vm.type"> primary
+                <input type="radio" name="type" value="bg-success" ng-model="vm.type"> success
+                <input type="radio" name="type" value="bg-info" ng-model="vm.type"> info
+                <input type="radio" name="type" value="bg-danger" ng-model="vm.type"> danger
+                <input type="radio" name="type" value="bg-warning" ng-model="vm.type"> warning
+            </div>
+
+            <button ng-click="vm.abrirMessage()">Abrir mensaje</button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h3>Modales con angular</h3>
+        <hr>
+        <input type="text" ng-model="vm.mensaje">
+        <button ng-click="vm.ngAbrir()">
+            Abrir modal
+        </button>
+
+        <button ac-open-modal-for="mostrar-mensaje1">
+            Abrir modal con directiva
+        </button>
+
+        <div ac-modal="mostrar-mensaje">
+            <p>
+                Aqui hay un mensaje: {{ vm.mensaje }}
+            </p>
+        </div>
+
+        <div ac-modal="mostrar-mensaje1">
+            <p>
+                Este mensaje xd
+                <input type="text" ng-model="vm.mensaje">
+            </p>
+        </div>
+    </div>
+</div>

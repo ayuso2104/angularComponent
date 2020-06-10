@@ -1,0 +1,15 @@
+<div class="select-search-menu">
+    <div class="select-search__busqueda" name="validationForm" ng-form validation-with="{'validation-to-search': { behavior: { 'upper': ''} }}">
+        <div class="form-group has-feedback" >
+            <input type="text" class="form-control" ng-model="valueToSearch" name="validation-to-search"/>
+            <span class="fas fa-search form-control-feedback form-control-feedback-no-label no-col" ng-if="!valueToSearch"></span>
+            <span class="fas fa-times form-control-feedback form-control-feedback-no-label no-col pointer" ng-if="valueToSearch" ng-click="cleanFilter($event)"></span>
+        </div>
+    </div>
+    <div class="select-search__items">
+        <div ng-repeat="item in options | filterOrder:attributeFilter" class="pointer select-search__item" ng-click="setModel(item)">
+            {{ evalute(item) }}
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,46 @@
+.vertical-middle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.anchor {
+  text-decoration: underline;
+  color: steelblue;
+  cursor: pointer;
+}
+
+.menu-tab-item {
+  display: inline-block;
+  padding-left: 0.75em;
+  padding-right: 1em;
+
+  border-right: solid steelblue 1px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.multiple-input{
+  display: flex;
+}
+
+.multiple-input > * {
+  margin-right: 0.5em;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+$numbers_input_percent: 10;
+
+@for $i from 1 through $numbers_input_percent {
+  .multiple-input__#{$i * 10} {
+    width: percentage($i/10);
+  }
+}

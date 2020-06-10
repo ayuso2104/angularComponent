@@ -1,0 +1,149 @@
+/**
+*  Tooltip
+*/
+
+.ac-tooltip {
+    position: absolute;
+    background: #ddd;
+    padding: 1em;
+    border: solid #878787 1px;
+    border-radius: 0.25em;
+    cursor: initial;
+}
+
+.ac-tooltip__container {
+    display: inline-block;
+    position: relative;
+}
+
+.ac-tooltip__content {
+    position: absolute;
+    z-index: 1001;
+    padding: 0.25em 1em;
+    background-color: #eee;
+    border: solid 1px #ddd;
+    margin-top: 0.1em;
+    border-radius: 0.25em;
+}
+
+/**
+* Float container
+*/
+
+
+.float-container {
+    position: relative;
+}
+
+.float-content {
+    position: absolute;
+    z-index: 1300;
+}
+
+
+/**
+* Utilerias
+*/
+
+.ac-message {
+    padding: 1rem;   
+}
+
+.ac-none {
+    display: none;
+}
+
+.ac-block {
+    display: block;
+}
+
+.ac-icon {
+    text-align: center;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+* Elementos de interfaz
+*/
+
+.card {
+    border: solid 1px #ddd;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+}
+.card-title {
+    border-radius: 0.5rem;
+    padding: 0.25rem 1rem;
+    
+    font-weight: bold;
+    background-color: #878787;
+    color: #fafafa;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+
+/**
+* Nuevo flotante
+*/
+
+.ac-float-container {
+    padding: 1rem;
+    background-color: #fafafa;
+    border: solid 1px #ddd;
+}
+
+/**
+* Elemento selector
+*/
+
+.element-selector-container {
+    width: 100%;
+}
+
+/**
+* no mostra los elementos que no han cargado aun
+*/
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+/**
+ * Ajuste de has-feedback cuando el form-group no esta compartiendo un col
+ */
+.no-col {
+    right: 0.4em;
+}
+
+.has-feedback label ~ .form-control-feedback.no-col {
+    top: 2.44em;
+}
+
+.form-control-feedback.no-lbl {
+    top: 0.55em;
+}
+
+/**
+ * Se usa para corregir el "arrow" de los select en firefox
+ */
+@-moz-document url-prefix() {
+    select.form-control:not([multiple]) {
+        padding-right: 25px;
+        background-image: url("data:image/svg+xml,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' width='14px' height='14px' viewBox='0 0 1200 1000' fill='rgb(51,51,51)'><path d='M1100 411l-198 -199l-353 353l-353 -353l-197 199l551 551z'/></svg>");
+        background-repeat: no-repeat;
+        background-position: calc(100% - 7px) 50%;
+        -moz-appearance: none;
+        text-indent: 0.01px;
+        text-overflow: '';
+    }
+}

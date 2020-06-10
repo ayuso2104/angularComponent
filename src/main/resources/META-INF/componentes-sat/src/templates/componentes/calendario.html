@@ -1,0 +1,40 @@
+<style>
+    #calendar {
+        margin: 0 auto;
+        width: 50%;
+    }
+</style>
+
+
+<div class="row">
+    <h3>Calendario</h3>
+    <hr>
+    <div id="calendar"></div>
+
+    <button id="calendar-action">Calendar</button>
+
+
+    <input type="text" id="calendar-input">
+
+</div>
+
+
+<div class="row">
+    <h3>Construcción con directivas</h3>
+    <hr>
+
+    <button ac-open-date-for="fechaEjemplo">Open calendar</button>
+    <input type="text" ac-date="fechaEjemplo" ng-model="vm.fecha">
+
+    <button ac-date="fechaOtra" ng-model="vm.miFecha">Otro calendar</button>
+    
+
+    <pre>
+        {{ vm.fecha | json }}
+    </pre>
+
+    <pre>
+            {{ vm.miFecha | json }}
+        </pre>
+
+</div>

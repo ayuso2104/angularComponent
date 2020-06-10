@@ -1,0 +1,22 @@
+.select-checkbox-container, .select-label-container {
+    float: left;
+}
+.select-item-container {
+    display: block;
+    margin-bottom: 0.75rem;
+
+    border-bottom: solid 1px #ddd;
+}
+
+.select-item-container:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.select-checkbox-container {
+    margin-right: 0.5rem;
+}
+
+.select-checkbox-container [type='checkbox'] {
+    margin: 0;
+}
