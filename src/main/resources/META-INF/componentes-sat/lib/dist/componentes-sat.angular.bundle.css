@@ -11853,6 +11853,9 @@ object[data="about:blank"] {
 .form-control-feedback-no-label {
   top: 25%; }
 
+.strong {
+  font-weight: bold; }
+
 .vertical-middle {
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -12138,11 +12141,6 @@ form.ng-invalid.ng-submitted input.ng-invalid, form.ng-invalid.ng-submitted sele
   height: 100%;
   position: relative; }
 
-.ac-header__column,
-.ac-cell {
-  min-width: 15rem;
-  width: 15rem; }
-
 /**
 * En firefox 26 la columna no respeta el overflow:scroll del padre por lo que hay que poner el hidden manualmente
 */
@@ -12344,7 +12342,7 @@ _:-ms-fullscreen,
 .ac-table .ac-cell {
   padding: 0; }
 
-.ac-cell--container-content, .ac-header__column {
+.ac-cell--container-content {
   padding: 0.5rem; }
 
 /**
@@ -13361,3 +13359,5 @@ _:-ms-fullscreen,
   .select-search__item:hover {
     background-color: #dfdfdf; }
 
+
+/*# sourceMappingURL=componentes-sat.angular.bundle.css.map*/
