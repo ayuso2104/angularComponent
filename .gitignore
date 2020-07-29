@@ -1,0 +1,8 @@
+src/main/webapp/WEB-INF/
+src/main/webapp/dist/
+target/
+*.iml
+.idea
+._package.json
+package-lock.json
+node_modules

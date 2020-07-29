@@ -114,7 +114,7 @@
 
         return {
             basic: (value, columnName, extras) => {
-                return this.merge({
+                return merge({
                     value,
                     columnName,
                     orderable: false,
